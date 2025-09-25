@@ -1,3 +1,4 @@
+#Descripción del ejercicio
 '''
 Nota final de un estudiante:
 Según la nota obtenida (0 a 100):
@@ -7,11 +8,14 @@ Según la nota obtenida (0 a 100):
 Menor a 50: “Reprobado”.
 '''
 
+#Información para usuario
 print("Escuela Kat")
 print("Califiquemos la nota final de la materia de lenguaje de programación")
 
+#Pedir nota al usuario
 notaFinal = float(input("Nota final del estudiante de cero(0) a cien(100): "))
 
+#Condicional para saber si el usuario paso o q
 if notaFinal <= 100 and notaFinal >= 90:
     print("¡Excelente!✨")
 elif notaFinal <= 89 and notaFinal >= 70:

@@ -1,3 +1,4 @@
+#Descripción del ejercicio
 '''
 Tarifa de agua por estrato:
 El gobierno cobra tarifas de agua diferentes según el estrato:
@@ -10,9 +11,13 @@ Estrato 6: $120.000
 Pedir el estrato y mostrar cuánto debe pagar un usuario.
 '''
 
+#Información para usuario
 print("Bienvenido al gobierno Kat, vamos a ver cuanto toca pagar este mes por el servicio del agua 💧" )
+
+#Pedir la información del estrato al usuario
 estrato = int(input("Dame el estrato en el que resides del uno(1) al seis(6): "))
 
+#Condicionales para saber resultado al final para imprimir
 if estrato == 1:
     print(f"Siendo del estrato {estrato} toca pagar $20.000 por el servicio del agua")
 elif estrato == 2:

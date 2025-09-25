@@ -1,3 +1,4 @@
+#Descripción del ejercicio
 '''
 Costo de entrada a un cine:
 Según la edad del cliente, el precio es:
@@ -7,10 +8,13 @@ Menores de 5 años: no pueden entrar.
 18 a 59 años: $20.000.
 60 o más: $12.000.
 '''
-
+#Información para usuario
 print("Bienvenidos a CineKat 🎥🎞")
+
+#Edad pedida al usuario 
 edad = int(input("Digite la edad de quien va a ingresar: "))
 
+#Condicional para saber si debe pagar o no y cuanto deberia ser
 if edad < 5 and edad > 0:
     print("¡Este bebé no puede ingresar!👶🏻❌")
 elif edad >= 5 and edad <= 12:

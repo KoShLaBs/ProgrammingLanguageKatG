@@ -1,3 +1,4 @@
+#Descripción del ejercicio
 '''
 Categoría de edad:
 Pedir la edad de una persona y clasificarla:
@@ -8,9 +9,11 @@ Menor de 12: Niño.
 60 o más: Adulto mayor.
 '''
 
+#Información para usuario
 print("Clasificación de edad 🔢")
 edad = int(input("Digite su edad: "))
 
+#Condicional para saber que categoria cumple la edad digitada por usuario
 if edad < 12 and edad > 0:
     print("Usted es un niño 🧒🏻👧🏻👶🏻")
 elif edad >= 12 and edad <= 17:

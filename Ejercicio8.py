@@ -1,3 +1,4 @@
+#Descripción del ejercicio
 '''
 Categoría de salario:
 Un empleado recibe un salario y se clasifica así:
@@ -7,9 +8,13 @@ Entre $3.000.001 y $7.000.000: “Alto”.
 Más de $7.000.000: “Directivo”.
 '''
 
+#Información para usuario
 print("Categoria de salario 💰")
+
+#información pedida al usuario sobre su salario
 salario = int(input("Cuanto salrio gana(COP)(sin comas ni puntos): "))
 
+#condicional para saber la clasidicación de su salario
 if salario < 1000000 and salario > 0:
     print("Bajo")
 elif salario >= 1000000 and salario <= 3000000:

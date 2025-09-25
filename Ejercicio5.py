@@ -1,3 +1,4 @@
+#Descripción del ejercicio
 '''
 Costo de envío por peso:
 Una empresa cobra según el peso del paquete:
@@ -7,9 +8,13 @@ De 6 a 10 kg: $30.000.
 Más de 10 kg: $50.000.
 '''
 
+#Información para usuario
 print("InterKatidisimo 🚛")
+
+#Pedir peso al usuario 
 peso = float(input("¿Cuanto pesa el paquete que va a enviar?: "))
 
+#Condicional para saber valor a pagar por envio
 if peso < 2 and peso > 0:
     print("El envio te sale por $10.000. 🚛")
 elif peso >= 2 and peso < 6:

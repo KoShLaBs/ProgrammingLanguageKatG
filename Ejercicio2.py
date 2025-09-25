@@ -1,3 +1,4 @@
+#Descripción del ejercicio
 '''
 Impuesto de vehículos:
 Calcular el impuesto a pagar por un vehículo según su valor:
@@ -7,11 +8,14 @@ Entre $50.000.001 y $100.000.000: 10%.
 Mayor a $100.000.000: 15%.
 '''
 
+#Información para usuario
 print("Bienvenido al gobierno Kat, vamos a ver cuanto toca pagar este año por el impuesto vehicular 🚗🚙🛵")
 
+#Pedir el valor del vehiculo al usuario
 valor = int(input("Digite el valor de su vehiculo (sin puntos ni comas): "))
 aux = 0
 
+#Condicionales para saber que imprimir al final dependiendo del rango del valor digitado por usuario
 if valor < 20000000 and valor > 0:
     print("No se preocupe, no debe pagar impuestos por ese vehiculo")
 elif valor >= 20000000 and valor <= 50000000:
