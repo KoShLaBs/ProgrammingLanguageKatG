@@ -7,7 +7,7 @@ Entre $3.000.001 y $7.000.000: “Alto”.
 Más de $7.000.000: “Directivo”.
 '''
 
-print("Categoria de salario")
+print("Categoria de salario 💰")
 salario = int(input("Cuanto salrio gana(COP)(sin comas ni puntos): "))
 
 if salario < 1000000 and salario > 0:
@@ -19,4 +19,4 @@ elif salario >= 3000001 and salario < 7000000:
 elif salario >= 7000000:
     print("Directivo")
 else:
-    print("Salario invalido")
+    print("⚠ Salario invalido ⚠")

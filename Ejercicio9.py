@@ -6,7 +6,7 @@ Entre 18.5 y 24.9: Normal.
 Entre 25 y 29.9: Sobrepeso.
 30 o más: Obesidad.
 '''
-print("MediKat")
+print("MediKat 🩺")
 print("Clasificación de IMC (Índice de Masa Corporal)")
 
 peso = float(input("Deme su peso: "))
@@ -24,4 +24,4 @@ elif imc >= 25 and imc <= 29.9:
 elif imc >= 30:
     print(f"Tu IMC es de: {imc:.0f}. Es decir, Obesidad")
 else:
-    print("Peso o estatura invalida")
+    print("⚠ Peso o estatura invalida ⚠")

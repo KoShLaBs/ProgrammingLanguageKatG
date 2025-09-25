@@ -8,18 +8,18 @@ Menor de 12: Niño.
 60 o más: Adulto mayor.
 '''
 
-print("Clasificación de edad")
+print("Clasificación de edad 🔢")
 edad = int(input("Digite su edad: "))
 
 if edad < 12 and edad > 0:
-    print("Usted es un niño")
+    print("Usted es un niño 🧒🏻👧🏻👶🏻")
 elif edad >= 12 and edad <= 17:
-    print("Usted es un adolescente") 
+    print("Usted es un adolescente 🧑🏻👧🏻") 
 elif edad >= 18 and edad <= 29:
-    print("Usted es un joven") 
+    print("Usted es un joven 👨🏻👩🏻") 
 elif edad >= 30 and edad <= 59:
-    print("Usted es un adulto") 
+    print("Usted es un adulto 👨🏻👩🏻") 
 elif edad >= 60:
-    print("Usted es un adulo mayor") 
+    print("Usted es un adulo mayor 👵🏻👴🏻") 
 else:
-    print("edad invalida")
+    print("⚠ edad invalida ⚠")

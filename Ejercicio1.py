@@ -10,7 +10,7 @@ Estrato 6: $120.000
 Pedir el estrato y mostrar cuánto debe pagar un usuario.
 '''
 
-print("Bienvenido al gobierno Kat, vamos a ver cuanto toca pagar este mes por el servicio del agua")
+print("Bienvenido al gobierno Kat, vamos a ver cuanto toca pagar este mes por el servicio del agua 💧" )
 estrato = int(input("Dame el estrato en el que resides del uno(1) al seis(6): "))
 
 if estrato == 1:
@@ -26,4 +26,4 @@ elif estrato == 5:
 elif estrato == 6:
     print(f"Siendo del estrato {estrato} toca pagar $120.000 por el servicio del agua")
 else:
-    print("estrato invalido")
+    print("⚠ estrato invalido ⚠")
