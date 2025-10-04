@@ -47,13 +47,13 @@ promedioGanancia = totalDia / numeroVentas
 
 #Salida
 if numeroVentas >= 5 and totalDia >= 500000:
-    print(f"\nMeta cumplida! \n Ganacia de {totalDia} con un promedio de {promedioGanancia:.0f} y {numeroVentas} transaciones exitosas")
+    print(f"\nMeta cumplida! \n Ganacia de {totalDia} con un promedio de {promedioGanancia} y {numeroVentas} transaciones exitosas")
 else:
     if numeroVentas < 5:
         print(f"\nMeta no cumplida :c \n numero de ventas: {numeroVentas}")
         pass
     elif totalDia < 500000:
-        print(f"\nMeta no cumplida :c \n total del dia: {totalDia:.0f}")
+        print(f"\nMeta no cumplida :c \n total del dia: {totalDia}")
         pass
     pass
 
