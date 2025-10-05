@@ -1,21 +1,6 @@
-'''
-### **Pase de lista de empleados (turno)**
-
-**Objetivo:**Contar asistencia d`Nempleados.
-
-**Entradas:**número`N`y, por cada empleado,`p`(presente),`t`(tarde),`a`(ausente).
-
-**Reglas:**
-
-- Un empleado “cumple” si está`presente`**o**(`tarde`**y**con justificación`s/n`=`s`).
-- Usa`for`para iterar`1..N`.
-    
-    **Salida:**presentes, tardes, ausentes, y cuántos “cumplen”. Si`cumplen/N >= 0.9`, mostrar “Turno óptimo”.
-'''
-
 #Info usuario
-print("---Pasando lista en el cuartel kat de los empleados---")
-print("Registre la asistencia del turno")
+print("---Pasando lista en el cuartel kat de los empleados👷🏻‍♂️👷🏻‍♀️---")
+print("Registre la asistencia del turno📝")
 
 #Definir variables
 totalEmpleados = 0
@@ -28,14 +13,14 @@ empleadosNoCumplen = 0
 #Entrada numero de empleados
 while True:
     try:
-        totalEmpleados = int(input("Ingrese el numero de empleados en el turno: "))
+        totalEmpleados = int(input("➡Ingrese el numero de empleados en el turno: "))
         if totalEmpleados > 0:
             break
         else:
             print("Ingresar un numero mayor a 0")
             continue
     except Exception as e:
-        print("Ingresar un numero valido!")
+        print("⚠ Ingresar un numero valido!⚠")
         raise e
     pass
 
@@ -68,9 +53,9 @@ for empleado in range(1, totalEmpleados + 1):
 #Calculo adicional de promedio
 promedioDia = empleadosCumplen / totalEmpleados
 if promedioDia >= 0.9:
-    turnoOptimo = "Turno óptimo"
+    turnoOptimo = "Turno óptimo✅"
 else:
-    turnoOptimo = "Turno no óptimo"
+    turnoOptimo = "Turno no óptimo❌"
     pass
 
 #Imprimir datos
