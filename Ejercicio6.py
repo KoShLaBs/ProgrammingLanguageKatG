@@ -20,6 +20,7 @@ pin = "2089"
 intentos = 0
 dinero = 0
 
+print("\nCajero automatico KatCash🤑")
 #Validar PIN
 while intentos < 4:
     pinIngresado = input("Digite su PIN: ")
