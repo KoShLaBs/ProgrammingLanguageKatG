@@ -26,13 +26,13 @@ for dias in range(1,30+1):
     validar = True
     while validar:
         try:
-            consumo = float(input(f"Ingrese consumo del día {dias} en kWh: "))
+            consumo = float(input(f"🔢 Ingrese consumo del día {dias} en kWh: "))
             if (consumo < 0):
-                print("Ingresar número mayor a cero")
+                print("⚠️ Ingresar número mayor a cero")
                 continue
             pass
         except Exception as e:
-            print("Número invalido")
+            print("❌ Número invalido")
             raise e
         validar = False
         
@@ -55,6 +55,6 @@ elif (totalKwh > 500):
     costoFinal = totalKwh * 850
 
 #Salida
-print(f"\nSu consumo total fue de {totalKwh:.2f}kWh, con un costo final de ${costoFinal:.0f}")
+print(f"\n⚡ Su consumo total fue de {totalKwh:.2f}kWh, con un costo final de ${costoFinal:.0f} 💸")
 if (totalKwh > 600 and diasAltos >= 5):
-    print(f"Se recomienda realizar una Auditoría de consumo debido a que llevo {diasAltos} días de alto consumo")    
+    print(f"🚨 Se recomienda realizar una Auditoría de consumo debido a que tuvo {diasAltos} dias de alto consumo 🔍")

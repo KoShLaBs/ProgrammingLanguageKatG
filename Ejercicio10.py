@@ -26,32 +26,32 @@ turnoCierre = 100
 validar = True
 while validar:
     try:
-        turno = int(input("Ingrese el número máximo de turnos a emitir: "))
+        turno = int(input("Ingrese el número maximo de turnos a emitir 🏦: "))
         if (turno <= 0):
-            print("Ingresar número mayor a cero")
+            print("⚠️ Ingresar número mayor a cero")
             continue
         pass
     except Exception as e:
-        print("Número invalido")
+        print("❌ Número invalido")
         raise e
-    validar = False
-    pass
-    pass
-#Ciclo para N turnos
-for turnos in range(1, turno +1):
-    #Condición multiplos o terminados en 4
-    if (turnos % 13 == 0 or str(turnos).endswith('4')):
-        omitidos += 1
-        continue
-    #Mostrar turno válido
-    print(f"Turno: {turnos}")
-    validos += 1
-    
-    #Condición de cierre
-    if (turnos == turnoCierre or validos == 50):
-        break
-    pass
+        validar = False
+        pass
+        pass
+    #Ciclo para N turnos
+    for turnos in range(1, turno +1):
+        #Condición multiplos o terminados en 4
+        if (turnos % 13 == 0 or str(turnos).endswith('4')):
+            omitidos += 1
+            continue
+        #Mostrar turno válido
+        print(f"✅ Turno: {turnos}")
+        validos += 1
+        
+        #Condición de cierre
+        if (turnos == turnoCierre or validos == 50):
+            break
+        pass
 
-#Salida
-print(f"\nSe emitieron {validos} turnos válidos y se omitieron {omitidos} turnos")  
+    #Salida
+    print(f"\n🎟️ Se emitieron {validos} turnos validos y se omitieron {omitidos} turnos 🚫")  
 

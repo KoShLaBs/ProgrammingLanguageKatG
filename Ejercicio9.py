@@ -24,18 +24,18 @@ entregas = 0
 
 do = True
 while do:
-    print("1) Registrar entrega\nEscribir 'fin' para acabar")
+    print("1) Registrar entrega 📋\nEscribir 'fin' para acabar 🛑")
     #Validar
     validar = True
     do = validar
     try:
-        opcion = input("Dame una opcion").lower()
+        opcion = input("Dame una opcion 👉 ").lower()
         if opcion not in ["1","fin"]:
-            print("Ingrese un dato válido, uno(1) o 'fin'\n")
+            print("Ingrese un dato valido, uno(1) 🟢 o 'fin' 🛑\n")
             continue
         pass
     except Exception as e:
-        print("Error en la entrada, inténtalo de nuevo.")
+        print("⚠️ Error en la entrada, intentalo de nuevo.")
         raise e
     validar = False
     
@@ -48,28 +48,28 @@ while do:
             #Validar VIP
             do = validar
             try:
-                vip = input("Digitar 's' si es usuario VIP o 'n' si no lo es: ").lower()
+                vip = input("Digitar 's' si es usuario VIP 👑 o 'n' si no lo es 🙅: ").lower()
                 if vip not in ["s","n"]:
-                    print("Ingrese un dato válido, 's' o 'n'\n")
+                    print("Ingrese un dato valido, 's' 👑 o 'n' 🙅\n")
                     continue
                 pass
             except Exception as e:
-                print("Error en la entrada, inténtalo de nuevo.")
+                print("⚠️ Error en la entrada, intentalo de nuevo.")
                 raise e
             validar = False
             
             validar = True
-            print(f"Entrega {entregas}")
+            print(f"Entrega {entregas} 📦")
             #Hora prometida
             do = validar
             try:
-                prometido = int(input("Digite la hora prometida (0-23): "))
-                if prometido < 0 and prometido > 23:
-                    print("Error en el valor ingresado")
+                prometido = int(input("Digite la hora prometida (0-23) ⏰: "))
+                if prometido < 0 or prometido > 23:
+                    print("❌ Error en el valor ingresado")
                     continue
                 pass
             except Exception as e:
-                print("Dato invalido")
+                print("❌ Dato invalido")
                 raise e
             validar = False
             
@@ -77,30 +77,30 @@ while do:
             validar = True
             do = validar
             try:
-                actual = int(input("Digite la hora actual (0-23): "))
-                if actual < 0 and actual > 23:
-                    print("Error en el valor ingresado")
+                actual = int(input("Digite la hora actual (0-23) 🕒: "))
+                if actual < 0 or actual > 23:
+                    print("❌ Error en el valor ingresado")
                     continue
                 pass
             except Exception as e:
-                print("Dato invalido")
+                print("❌ Dato invalido")
                 raise e
             validar = False
             
             #Validar a tiempo o retraso 
             if (actual <= prometido or (actual <= prometido + 1 and vip == 's')):
-                print("Entrega a tiempo\n")
+                print("✅ Entrega a tiempo\n")
                 aTiempo += 1
             else:
-                print("Entrega con retraso\n")
+                print("⏳ Entrega con retraso\n")
                 tarde += 1
             
             #Validar si se puede seguir entregando
             if (entregas == 10):
-                print("Se han completado las 10 entregas")
+                print("🎉 Se han completado las 10 entregas")
                 do = False
             elif (actual == 20 and (10 - entregas) >= 2):
-                print("No hay tiempo para completar las entregas restantes")
+                print("⏰ No hay tiempo para completar las entregas restantes")
                 do = False
             
         case "fin":
@@ -111,4 +111,4 @@ if (entregas > 0):
     tasa = (aTiempo / entregas) * 100
     
 #Salida
-print(f"\nEntregas a tiempo: {aTiempo}\nEntregas con retraso: {tarde}\nTasa de cumplimiento: {tasa:.2f}%")
+print(f"\nEntregas a tiempo: {aTiempo} ✅\nEntregas con retraso: {tarde} ⏳\nTasa de cumplimiento: {tasa:.2f}% 📊")
