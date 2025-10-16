@@ -1,0 +1,91 @@
+---Ejercicio 1️⃣---
+Vector edades: [15, 2, 37, 30, 25, 6]    
+Vector edades con indices (2): 37        
+Vector edades con indices (-2): 25       
+[15, 200, 37, 30, 25, 6]
+
+---Ejercicio 2️⃣---
+Slicing v[1:4]: [20, 30, 40]
+Slicing v[:5]: [10, 20, 30, 40, 50]      
+Slicing v[2:]: [30, 40, 50, 60]
+Slicing v[::-1]: [60, 50, 40, 30, 20, 10]
+Slicing v[::2]: [10, 30, 50]
+Longitud de v: 6
+
+---Ejercicio 3️⃣---
+Vector: [10, 20, 30, 40, 50, 60]
+
+Vamos a eliminar
+Vector despues: [10, 20, 30, 40, 50]     
+
+Vamos a eliminar la posicion 0
+Vector despues: [20, 30, 40, 50]
+
+Vamos a eliminar el valor 30
+Vector despues: [20, 40, 50]
+
+Vector despues de limpiar: []
+
+---Ejercicio 4️⃣---
+Vector: [15, 200, 37, 30, 25, 6]
+
+Vector con valor:
+Edad: 15
+Edad: 200
+Edad: 37
+Edad: 30
+Edad: 25
+Edad: 6
+
+Vector con indice:
+Edad en posicion 0: 15
+Edad en posicion 1: 200
+Edad en posicion 2: 37
+Edad en posicion 3: 30
+Edad en posicion 4: 25
+Edad en posicion 5: 6
+
+Vector con indice y valor:
+Edad en posicion 0: 15
+Edad en posicion 1: 200
+Edad en posicion 2: 37
+Edad en posicion 3: 30
+Edad en posicion 4: 25
+Edad en posicion 5: 6
+
+---Ejercicio 5️⃣---
+1-Vector: [3, 7, 2, 9]
+2-Suma: 21
+3-Minimo: 2
+4-Maximo: 9
+5-Promedio: 5.25
+
+---Ejercicio 6️⃣---
+1-Vector nombres: ['Ana', 'Luis', 'Meli']
+2-Vector mayusculas: ['ANA', 'LUIS', 'MELI']
+3-Vector largos: [3, 4, 4]
+4-Existe 'Mel' en la lista nombres?: False
+5-Existe 'Mel' en el nombre 'Melissa'?: True
+
+---Mini-reto 7️⃣---
+Jugemos a un juego!😊
+➡Ingrese la cantidad de numeros que va a ingresar: 10
+➡Ingrese el numero 1: 1
+➡Ingrese el numero 2: 3
+➡Ingrese el numero 3: 5
+➡Ingrese el numero 4: 7
+➡Ingrese el numero 5: 9
+➡Ingrese el numero 6: 12
+➡Ingrese el numero 7: 13
+➡Ingrese el numero 8: 15
+➡Ingrese el numero 9: 17
+➡Ingrese el numero 10: 19
+Lista de numeros: [1, 3, 5, 7, 9, 12, 13, 15, 17, 19]
+Lista invertida: [19, 17, 15, 13, 12, 9, 7, 5, 3, 1]
+Suma: 101
+Promedio: 10.1
+Números mayores a 10: [12, 13, 15, 17, 19]
+¿Hay un 5 en la lista?: True
+
+---Fin del juego!🎉---
+PS C:\Users\Kat\OneDrive\Escritorio\Universidad\2Semestre\Lenguaje de programación\Actividad8>
