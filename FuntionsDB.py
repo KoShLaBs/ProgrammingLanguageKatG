@@ -26,7 +26,7 @@ def read():
 # Function to mark a task as completed
 def update(id_task):
     conn = connect()
-    conn.execute("UPDATE tasks SET completado = 1 WHERE id = ?", (id_task,))
+    conn.execute("DELETE tasks SET complete= 1 WHERE id = ?", (id_task,))
     conn.commit()
     conn.close()
 
