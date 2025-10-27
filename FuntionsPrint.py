@@ -1,7 +1,7 @@
 #Funtions with expections for inputs and prints
 
 #importing functions from FuntionsDB
-from FuntionsDB import create, read, update, delete
+from FuntionsDB import create, read, update, delete, readPerMonth, readPerWeek
 
 # Function to add a new task with input
 def createTask():
@@ -51,6 +51,19 @@ def readTasks():
     print("\nLista de tareas:")
     read()
     
+
+#Function to read per month 
+def readTasksPerMonth():
+    print("\nLista de tareas por mes:")
+    readPerMonth()
+    
+
+#Function to read per week 
+def readTasksPerWeek():
+    print("\nLista de tareas por dia de la semana:")
+    readPerWeek()
+    
+
 # Function to update a task as completed
 def updateTask():
     while True:
@@ -81,19 +94,20 @@ def deleteTask():
         except Exception as e:
             print("❌ ID invalido, ingrese un número entero.")
             continue
-    
-    #Validar entrada
-    
+            
     delete(id_task)
     print("\n¡Tarea eliminada!🗑️.")
         
 
 # Function to print the menu
 def menu():
-    print("\n=== Task Manager ===")
-    print("1. Agregar tarea")
-    print("2. Ver tareas")
-    print("3. Completar tarea")
-    print("4. Eliminar tarea")
-    print("0. Salir")
+    print("\n📋 === Task Manager ===")
+    print("1.  ➕ Agregar tarea")
+    print("2.  👀 Ver tareas")
+    print("3.  ✅ Completar tarea")
+    print("4.  ❌ Eliminar tarea")
+    print("5.  🗓️ Ver tareas por mes")
+    print("6.  📅 Ver tareas por día de la semana")
+    print("0.  🚪 Salir")
+
 

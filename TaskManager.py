@@ -1,10 +1,11 @@
 #Create menu and functions to interact with the user
-from FuntionsPrint import menu, createTask, readTasks, updateTask, deleteTask
+from FuntionsPrint import menu, createTask, readTasks, updateTask, deleteTask, readTasksPerMonth, readTasksPerWeek
 
-menu()
+
 
 validar = True
 while validar:
+    menu()
     try:
         option = input("\nIngresa una opción: ")
         optionNum = int(option)
@@ -25,6 +26,10 @@ while validar:
             updateTask()
         case "4":
             deleteTask()
+        case "5":
+            readTasksPerMonth()
+        case "6":
+            readTasksPerWeek()
         case "0":
             print("\nNos vemos la proxima!\n")
             break
